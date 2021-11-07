@@ -35,9 +35,6 @@ class Clique:
                 index = (element - minVal)//interval
                 subspaces[index, feature] += 1
 
-        # print("1D projection:\n", subspaces, "\n")
-        is_dense = subspaces > tau * number_data_points
-        # print("is_dense:\n", is_dense)
         one_dim_dense_units = []
 
         for f in range(number_features):
